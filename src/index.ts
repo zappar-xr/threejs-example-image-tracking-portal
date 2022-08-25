@@ -15,20 +15,19 @@ import { MaskPass, ClearMaskPass } from 'three/examples/jsm/postprocessing/MaskP
 import { CopyShader } from 'three/examples/jsm/shaders/CopyShader';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 
-import foliage from '../assets/1-Foliage.png';
-import road from '../assets/2-Road.png';
-import yellowField from '../assets/3-Yellow-Field.png';
-import mountain from '../assets/4-Mountain.png';
-import darkHills from '../assets/5-Dark-Hills.png';
-import greyHills from '../assets/6-Grey-Hills.png';
-import lightGreyHills from '../assets/7-Light-Grey-Hills.png';
-import pinkHill from '../assets/8-Pink-Hill.png';
-import sun from '../assets/9-Sun.png';
-import distanceTexture from '../assets/distance.png';
+const foliage = new URL('../assets/1-Foliage.png', import.meta.url).href;
+const road = new URL('../assets/2-Road.png', import.meta.url).href;
+const yellowField = new URL('../assets/3-Yellow-Field.png', import.meta.url).href;
+const mountain = new URL('../assets/4-Mountain.png', import.meta.url).href;
+const darkHills = new URL('../assets/5-Dark-Hills.png', import.meta.url).href;
+const greyHills = new URL('../assets/6-Grey-Hills.png', import.meta.url).href;
+const lightGreyHills = new URL('../assets/7-Light-Grey-Hills.png', import.meta.url).href;
+const pinkHill = new URL('../assets/8-Pink-Hill.png', import.meta.url).href;
+const sun = new URL('../assets/9-Sun.png', import.meta.url).href;
+const distanceTexture = new URL('../assets/distance.png', import.meta.url).href;
+const targetImage = new URL('../assets/example-tracking-image.zpt', import.meta.url).href;
 
-import targetImage from '../assets/example-tracking-image.zpt';
-
-import './index.sass';
+import './index.css';
 
 // The SDK is supported on many different browsers, but there are some that
 // don't provide camera access. This function detects if the browser is supported
